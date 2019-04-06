@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="dietApp">
+
+<head>
+    <title>My name is John</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="dietCtrl as ctrl">
+    <div class="container">
+        <h2>{{ ctrl.Summary }} (Example:{{ ctrl.Dishes[0].Breakfast }})</h2>
+
+        <table class="table table-condensed">
+            <tr>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+                <th>Dinner</th>
+            </tr>
+            <tr ng-repeat="dishes in ctrl.Dishes">
+                <td>{{ dishes.Breakfast }}</td>
+                <td>{{ dishes.Lunch }}</td>
+                <td>{{ dishes.Dinner }}</td>
+            </tr>
+
+        </table>
+    </div>
+    <h3>[{{ ctrl.Dishes.length }}]</h3>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+    <script type="application/javascript">
+        var dietApp = angular.module("dietApp", []);
+        dietApp.controller("dietCtrl", [function () {
+            vm = this;
+            vm.Summary = "The World of Classy Meals";
+            vm.Dishes = [
+                { "Breakfast": "Cornflakes", "Lunch": "Pot Noodle", "Dinner": "Haggis" },
+                { "Breakfast": "Porridge", "Lunch": "McD", "Dinner": "Lobster Thermidor" },
+                { "Breakfast": "Poached egg", "Lunch": "Meal Deal", "Dinner": "Pigs Trotter in vinegar" },
+                { "Breakfast": "Denny's Special", "Lunch": "Gin and Tonic", "Dinner": "Pasta" },
+            ];
+        }]);
+    </script>
+</body>
+
+</html>

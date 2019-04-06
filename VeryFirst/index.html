@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="linksApp">
+
+<head>
+    <title>My name is John</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="linksCtrl as ctrl">
+    <div class="container" ng-cloak>
+        <h2>{{ctrl.Summary}} (Count:{{ctrl.Links.length}})</h2>
+        <table class="table table-condensed">
+            <tr>
+                <th>Link</th>
+            </tr>
+            <tr ng-repeat="links in ctrl.Links">
+                <td><a href="{{links.URL}}">{{links.Name}}</a></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+    <script type="application/javascript">
+        var linksApp = angular.module("linksApp", []);
+        linksApp.controller("linksCtrl", [function () {
+            vm = this;
+            vm.Summary = "A Set of Links";
+            vm.Links = Links;
+        }]);
+    </script>
+
+</body>
+
+</html>
+<!-- data... -->
+<script>
+    var Links = [
+        { "Name": "My blog", "URL": "https://dennisaa.wordpress.com" },
+        { "Name": "Foreigner - Double Vision - YouTube", "URL": "https://www.youtube.com/watch?v=36hdcn_3ekI" },
+        { "Name": "Acer 27\" monitor", "URL": "http://www.acerdirect.co.uk/Acer_K272HLbid_69cm_27_Wide_6ms_100M_1_ACM_300nits_VA_LED_DVI_w-HDCP_HDMI_UM.HW3EE.005/version.asp" },
+        { "Name": "Chords for Hazard", "URL": "https://tabs.ultimate-guitar.com/r/richard_marx/hazard_crd.htm" },
+    ];
+</script>
