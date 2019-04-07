@@ -9,23 +9,7 @@ This assumes that
   <li> for anything to happen, that conf.js references a spec2.js (right now) </li>
 </ol>
 <hr/>
-<h3>Helper notes - http server</h3>
-A quick way of running up an http server for testing how your Protractor/Selenium code plays with html/angular is:
-<pre>
-npm install http-server -g
-http-server
-</pre>
-The http server takes its home directory to be the one from where you invoked it. So given this...
-
-![](./assets/images/DirListing01.jpg)
-
-... both index.html and stuff.html will be found by a local browser:
-
-![](./assets/images/indexHtmlSearch01.jpg)
-<hr/>
-
-![](./assets/images/indexHtmlSearch02.jpg)
-
+For more detailed points, see the wiki (tab above)
 
 
 
