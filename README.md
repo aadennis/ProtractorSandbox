@@ -20,7 +20,7 @@ The http server takes its home directory to be the one from where you invoked it
 
 ... both of the files index.html and stuff.html will be found by a local browser:
 
-![](./assets\images\indexHtmlSearch01.jpg)
+![](./assets/images/indexHtmlSearch01.jpg)
 
 
 
