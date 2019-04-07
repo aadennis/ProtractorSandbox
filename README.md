@@ -18,3 +18,7 @@ The http server takes its home directory to be the one from where you invoked it
 
 ![](./assets/images/DirListing01.jpg)
 
+... both of the files index.html and stuff.html will be found by a local browser:
+
+
+
