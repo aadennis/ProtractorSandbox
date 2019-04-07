@@ -14,3 +14,4 @@ A quick way of running up an http server for testing how your Protractor/Seleniu
 npm install http-server -g
 http-server
 </pre>
+The http server takes its home directory to be the one from where you invoked it. So given this...
