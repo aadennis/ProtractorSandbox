@@ -10,7 +10,7 @@ This assumes that
   <li> for anything to happen, that conf.js references a spec2.js (right now) </li>
 </ol>
 <hr/>
-For more detailed points, see the wiki (tab above)
+For more detailed points, see the wiki: https://github.com/aadennis/ProtractorSandbox/wiki
 
 
 
