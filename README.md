@@ -1,7 +1,8 @@
 # ProtractorSandbox
+## Running the tests
 
 To run the tests, in a command window, type:<br>
-<b>protractor conf.js</b>
+<pre>protractor conf.js</pre>
 
 This assumes that
 <ol>
