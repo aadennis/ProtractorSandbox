@@ -22,5 +22,9 @@ The http server takes its home directory to be the one from where you invoked it
 
 ![](./assets/images/indexHtmlSearch01.jpg)
 
+![](./assets/images/indexHtmlSearch02.jpg)
+
+
+
 
 
