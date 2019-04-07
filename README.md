@@ -9,8 +9,6 @@ This assumes that
   <li> for anything to happen, that conf.js references a spec2.js (right now) </li>
 </ol>
 <hr/>
-
-<hr/>
 A quick way of running up an http server for testing/playing is:
 <pre>
 npm install http-server -g
