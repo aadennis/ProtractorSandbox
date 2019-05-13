@@ -11,6 +11,14 @@ This assumes that
 </ol>
 <hr/>
 For more detailed points, see the wiki: https://github.com/aadennis/ProtractorSandbox/wiki
+<hr/>
+As a dumping ground for Selenium, this does a basic assert on the localhost if started with Django?
+from selenium import webdriver
+browser = webdriver.Firefox()
+browser.get('http://localhost:8000')
+assert 'Django: the Web framework for perfectionists with deadlines.' in browser.title
+
+
 
 
 
